@@ -47,7 +47,7 @@
     <header class="site-navbar mt-3">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html">Brenhazy Recruitment</a></div>
+          <div class="site-logo col-6"><a href="index.html"><img src="<?= base_url('public/assets/images/brenhazy_logo.jpg'); ?>" class="img-fluid" alt="Brenhazy Limited Logo"></a></div>
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
@@ -60,7 +60,7 @@
                   <li><a href="post-job.html">Post a Job</a></li>
                 </ul>
               </li>
-              <li class="has-children">
+              <!-- <li class="has-children">
                 <a href="services.html">Pages</a>
                 <ul class="dropdown">
                   <li><a href="services.html">Services</a></li>
@@ -73,7 +73,7 @@
                   <li><a href="gallery.html">Gallery</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li> -->
               <li><a href="contact.html">Contact</a></li>
               <?php if(isset(auth()->user()->username)): ?>
               <li class="nav-item dropdown">
