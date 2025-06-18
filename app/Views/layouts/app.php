@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>JobBoard &mdash; Website Template by Colorlib</title>
+    <title>Brenhazy Recruitment | Top Recruitment Portal For JobSeekers in Nigeria</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
@@ -47,7 +47,7 @@
     <header class="site-navbar mt-3">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html">JobBoard</a></div>
+          <div class="site-logo col-6"><a href="index.html">Brenhazy Recruitment</a></div>
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
@@ -75,12 +75,22 @@
               </li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <?php if(isset(auth()->user()->username())): ?>
-
+              <?php if(isset(auth()->user()->username)): ?>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?php echo auth()->user()->username; ?>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="<?= base_url('logout'); ?>">Logout</a>
+                  </div>
+              </li>
                 <?php else: ?>
                   <li class="d-lg-"><a href="<?= base_url('login'); ?>">Log In</a></li>
                   <li class="d-lg-"><a href="<?= base_url('register'); ?>">Register</a></li>
-              <?php end; ?>
+              <?php endif; ?>
               <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
               <li class="d-lg-none"><a href="login.html">Log In</a></li>
             </ul>
