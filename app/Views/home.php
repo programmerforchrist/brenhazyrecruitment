@@ -118,7 +118,7 @@
 
         <?php foreach($allJobs as $job):  ?>
           <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-            <a href="job-single.html"></a>
+            <a href="<?php echo url_to('single.jobs',$job['id']); ?>"></a>
             <div class="job-listing-logo">
               <img src="<?= base_url('public/assets/images/'.$job['company_image'].'') ?>" alt="Free Website Template by Free-Template.co" class="img-fluid">
             </div>
