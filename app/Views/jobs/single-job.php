@@ -107,10 +107,9 @@
             <div class="bg-light p-3 border rounded">
               <h3 class="text-primary  mt-3 h5 pl-3 mb-3 ">Share</h3>
               <div class="px-3">
-                <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-facebook"></span></a>
-                <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-twitter"></span></a>
-                <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-linkedin"></span></a>
-                <a href="#" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-pinterest"></span></a>
+                <a href="http://www.facebook.com/share.php?u=<?php echo base_url('posts/single-job/'.$singleJob['id'].''); ?>" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/intent/tweet?url=<?php echo base_url('posts/single-job/'.$singleJob['id'].''); ?>&text=<?php echo $singleJob['title']; ?>" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo base_url('posts/single-job/'.$singleJob['id'].''); ?>" class="pt-3 pb-3 pr-3 pl-0"><span class="icon-linkedin"></span></a>
               </div>
             </div>
 
